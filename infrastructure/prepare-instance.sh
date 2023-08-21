@@ -11,8 +11,8 @@ sudo apt install nodejs curl -y
 
 git clone https://github.com/A-RR3/book-management-app.git app
 cd app && npm install
-npm run build-tsc
-sudo mv ./infrastructure/app.service /etc/systemd/system
+tsc
+sudo mv ./infrastructure/ubuntuapp.service /etc/systemd/system
 sudo systemctl daemon-reload
 sudo systemctl enable app.service
 

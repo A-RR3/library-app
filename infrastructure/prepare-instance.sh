@@ -14,7 +14,7 @@ cd app && npm install
 tsc
 sudo mv ./infrastructure/ubuntuapp.service /etc/systemd/system
 sudo systemctl daemon-reload
-sudo systemctl enable app.service
+sudo systemctl enable ubuntuapp.service
 
 
 sudo reboot

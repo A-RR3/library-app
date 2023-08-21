@@ -11,7 +11,7 @@ sudo apt install nodejs curl -y
 
 git clone https://github.com/A-RR3/library-app.git app
 cd app && npm install
-tsc
+npm run build
 sudo mv ./infrastructure/ubuntuapp.service /etc/systemd/system
 sudo systemctl daemon-reload
 sudo systemctl enable ubuntuapp.service
